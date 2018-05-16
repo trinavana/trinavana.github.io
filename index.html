@@ -1,1 +1,378 @@
-Hello World
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+
+<!--
+••••••••••••••••••••••••
+
+Powered by Type & Grids™
+www.typeandgrids.com
+
+••••••••••••••••••••••••
+-->
+
+<title>Trina Vana &mdash; Mechanical Engineer</title>
+<meta name="description" content="The portfolio of Trina Vana">
+<meta name="author" content="Trina Vana">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================================================================= -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/themes/type_05.css">
+<link rel="stylesheet" href="css/themes/color_01.css">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================================================================= -->
+<link rel="shortcut icon" href="images/favicons/favicon.ico">
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================================================================= -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/jquery-1.8.3.min.js"></script>
+<script src="js/libs/jquery.easing.1.3.min.js"></script>
+<script src="js/libs/jquery.fitvids.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+<body>
+
+<!-- Write preloader to page - this allows the site to load for users with JS disabled -->
+<script type="text/javascript">
+	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/site_preloader.gif' alt='Preloader' /></div></div>");
+</script>
+
+<div class="container">
+	
+	<!-- Header begins ========================================================================== -->
+	<header class="sixteen columns">
+		<div id="logo">
+			<h1>Trina Vana</h1>
+			<h2>Mechanical Engineer</h2>
+			<!--
+			<img src="images/logo.png" width="275" height="35" alt="Logo" />
+			-->
+		</div>
+		<nav>
+			<ul>
+				<li><button id="workPage">Work</button></li>
+				<li><button id="aboutPage">About</button></li>
+				<!--<li><a href="http://wordpress.org" target="_blank">Blog</a></li>-->
+			</ul>
+		</nav>
+		<hr />
+	</header>
+	<!-- Header ends ============================================================================ -->
+	
+	<!-- Work page begins ======================================================================= -->
+	<div id="work">
+	
+		<div id="overview" class="sixteen columns">
+			<h3>Portfolio</h3>
+			<hr />
+		</div>
+		
+		<div class="eight columns" id="col1">
+
+	<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Laser Tracking Robot</h4>
+						<h5></h5>
+					</div>
+					<img src="images/projects/robot.png" alt="Robot" class="thumbnailImage" />
+				</div>
+				
+				<div class="projectInfo">
+					<h4>Laser Tracking Robot</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/robot/index.html'">View video</button></div>
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					
+					<p>
+						The objective of this project was to model and control a robotic system. The group designed a robot control algorithm that used sensory feedback in closed-loop form to perform a functional behavior or task.
+						<br><br>The final product was this laser tracking robot.  The 2 DOF robotic arm uses a mounted, fixed camera to track the current system's orientation via the red laser dot from its end effector.  Reading an external input of a desired location represented by a green laser pointer dot, the system takes this desired position in pixel space and translates this to motion in servo space to align the visual cues using PID control.
+					</p>
+					<ul>
+						<li><strong>Class:</strong> MAE 298, UCLA</li>
+						<li><strong>Year:</strong> Spring 2016</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+
+				<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Tunable Single-Axis Tilt MEMS Mirror</h4>
+						<h5></h5>
+					</div>
+					<img src="images/projects/compliant_mech.png" alt="Project 02" class="thumbnailImage" />
+				</div>
+				
+				<div class="projectInfo">
+					<h4>Tunable Single-Axis Tilt MEMS Mirror</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/compliant_mech/index.html'">View more</button></div>
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					
+					<p>
+						A flexure-based micro-mirror that can tip back and forth rapidly about a single rotational axis can be used to steer light for a variety of high-impact precision applications (e.g., optical switches and scanning systems). For high-speed scenarios, such mirrors are often driven to operate at their resonant frequencies to minimize the system’s required actuation energy and to simplify the mirror’s control such that no sensors or closed-loop control circuitry is necessary to achieve the desired speed. To achieve a tunable range of resonant frequencies, this micro-mirror system was designed with an additional set of actuators that could independently tune the system’s rotational resonant frequency by deforming its flexure elements.
+						<br><br>
+						CAD models were generated with SolidWorks, resonant frequency analysis was performed in SolidWorks and Matlab, and results were confirmed with simulation in MSC Adams.
+					</p>
+					<ul>
+						<li><strong>Class:</strong> MAE 294, UCLA</li>
+						<li><strong>Year:</strong> Winter 2016</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+		
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Connecting Rod Design &amp; Analysis</h4>
+						<h5></h5>
+					</div>
+					
+					<img src="images/projects/connecting_rod_preview.jpg" alt="Project 01" class="thumbnailImage" />
+				</div>
+				
+				<div class="projectInfo">
+					<h4>Connecting Rod Design &amp; Analysis</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/connecting_rod/index.html'">View more</button></div>
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					<p>
+						Connecting rod designed for use in 2009 Mini Cooper engine.  The following procedure was used to create and refine a final design:<br><br>
+						1. Load Analysis<br>
+						2. Preliminary Design using Beam Theory<br>
+						3. Two-Dimensional Solid Model<br>
+						4. Two-Dimensional Elastic Finite Element Analysis<br>
+						5. Lifetime Analysis: fatigue<br>
+						6. Lifetime Analysis: fracture<br>
+						7. Design Optimization<br>
+						8. Three-Dimensional Solid Model<br>
+						9. Three-Dimensional Elastic Finite Element Analysis<br><br>
+						The design was completed and refined using fatigue and fracture analysis methods with the aid of SolidWorks, COMSOL, and Abaqus.
+					</p>
+					<ul>
+						<li><strong>Class:</strong> MAE 296A, UCLA</li>
+						<li><strong>Year:</strong> Fall 2015</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Gearbox Design</h4>
+						<h5></h5>
+					</div>
+					<img src="images/projects/gearbox_design_preview.jpg" alt="Project 02" class="thumbnailImage" />
+				</div>
+				
+				<div class="projectInfo">
+					<h4>Gearbox Design</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/gearbox_design/index.html'">View more CAD drawings</button></div>
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					
+					<p>
+						The objective was to design a gearbox that met the following requirements:<br>
+						<br>&bull; Gear ratio of 1/240
+						<br>&bull; Orthogonal input and output shafts
+						<br>&bull; Supports 50 lb. overhung load at the output shaft
+						<br>&bull; Support input shaft rotation of 5000 rpm
+						<br>&bull; Minimum lifetime of 25,000 hours
+						<br><br>
+						In order to maximize ease of manufacturing, stock parts were used when possible.<br><br>
+						Parts and assemblies were made using Pro/E (Creo)
+					</p>
+					<ul>
+						<li><strong>Class:</strong> ME 359, Boston University</li>
+						<li><strong>Year:</strong> 2014</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Robotic Kinematics</h4>
+						<h5></h5>
+					</div>
+					<img src="images/projects/robotic_kinematics_preview.jpg" alt="Project 03" class="thumbnailImage" />
+				</div>
+					
+				<div class="projectInfo">
+					<h4>Robotic Kinematics</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/robotic_kinematics/index.html'">View video</button></div>
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					<p>
+						Using forward and inverse kinematic approaches, DARwIn-OP is programmed to execute motion required to knock a ball off of a tee.  The trajectory was planned and executed in the joint-space with the use of Matlab.
+					</p>
+					<ul>
+						<li><strong>Class:</strong> MAE 298, UCLA</li>
+						<li><strong>Year:</strong> Fall 2015</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Catheterization Lab Project</h4>
+						<h5>IN PROGRESS</h5>
+					</div>
+					<img src="images/projects/cath_lab_preview.jpg" alt="Project 04" class="thumbnailImage" />
+				</div>
+					
+				<div class="projectInfo">
+					<h4>Catheterization Lab Project</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+						<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/cath_lab/index.html'">View more</button></div>
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					<p>
+						Catheterization procedures in the U.S. currently total 4.5M yearly, and this number is projected increase to 4.68M by 2025 as the baby boomer generation ages (51% of catheterization procedures currently are performed on patients aged 65+). As popularity of these procedures increases, the incidence of reported back pain during the procedures becomes a growing concern. <br><br>As part of an interdisciplinary team of business and product design professionals, I am working to create a product that will ensure that patients are receiving the best clinical treatment experience possible by minimizing discomfort during catheterization procedures.
+					</p>
+					<ul>
+						<li><strong>Status: Prototyping</strong> </li>
+						<li><strong>Year:</strong> Winter and Spring 2016</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+			
+		</div><!-- col1 -->
+		
+		<!-- Even numbered projects are dynamically moved into this second column via JS -->
+		<div class="eight columns" id="col2">
+		</div>
+	
+	</div>
+	<!-- Work page ends ========================================================================= -->
+	
+	<!-- About page begins ====================================================================== -->
+	<div id="about">
+		
+		<!-- Column 1 begins ==================================================================== -->
+		<div class="twelve columns">
+			
+			<h3>About Me</h3>
+			<p>
+			Above all else, I place strong value in social responsibility.  As a mechanical engineer with a hands-on approach and a knack for creative problem solving, I aspire to develop meaningful technologies to improve overall quality of life for the broadest possible audience.  My professional experience and educational background in neurobiology are a testament to my passion for medical devices, but my interests extend as far as alternative energy to industrial robotics. 
+			<br><br>
+			
+		</div>
+		<!-- Column 1 ends ====================================================================== -->
+		
+		<!-- Column 2 begins ==================================================================== -->
+		<div class="four columns">
+			
+			<img src="images/about.jpg" alt="About" />
+			
+			<ul class="linedList">
+				<li><strong>Current Location:</strong> San Francisco, CA</li>
+				<li><strong>Email:</strong> <a href="mailto:trinavana@gmail.com">trinavana@gmail.com</a></li>
+				<li><strong>R&eacute;sum&eacute;:</strong> <a href="resume.pdf">resume.pdf</a></li>
+				<li><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/trinavana" target="_blank">www.linkedin.com/in/trinavana</a></li>
+			</ul>
+			
+		</div>
+		<!-- Column 2 ends ====================================================================== -->
+		
+	</div>
+	<!-- About page ends ======================================================================== -->
+	
+	<!-- Footer begins ========================================================================== -->
+	<footer class="sixteen columns">
+		<hr />
+		<ul id="footerLinks">
+			<li>&copy; 2016 Trina Vana. All rights reserved.</li>
+			<!--Notice: The "Powered by Type & Grids" link in the footer is required in the Free version. Upgrade to the Pro version if you would like to remove it.-->
+			<li><a href="http://www.typeandgrids.com" target="_blank">Powered by Type &amp; Grids</a></li>
+		</ul>
+	</footer>
+	<!-- Footer ends ============================================================================ -->
+		
+</div><!-- container -->
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10831808; 
+var sc_invisible=1; 
+var sc_security="a3bb1d33"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10831808/0/a3bb1d33/1/"
+alt="shopify analytics ecommerce"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
